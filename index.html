@@ -69,6 +69,9 @@
             </div>
             <a class="close-btn">close</a>
       </div>
+      <div class="login-container">
+            <h1>hello login starts</h1>
+      </div>
 
        
       <script type="text/javascript">
@@ -151,14 +154,17 @@
 
       t1.reverse();
       $(document).on("click", ".gamelist", function() {
+            document.querySelector('.games').style.height = '100vh';
             t1.reversed(!t1.reversed());
       });
 
       $(document).on("click", "a", function() {
+            document.querySelector('.games').style.height = '0vh';
             t1.reversed(!t1.reversed());
       });
 
       $(document).on("click", ".close-btn a", function() {
+            document.querySelector('.games').style.height = '0vh';
             t1.reversed(!t1.reversed());
       });
 
